@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:background="@color/white"
+        android:clipToPadding = "false"
+        android:animateLayoutChanges="true">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_close"
+            android:layout_marginLeft="20dp"
+            android:layout_height="?android:attr/actionBarSize"
+            app:srcCompat="@drawable/ic_action_name"/>
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_country_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="country"
+            android:layout_below="@+id/txt_title"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center"
+            android:text="Smoolider"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/txt_title"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_black_chip"
+            android:layout_alignParentRight="true">
+
+            <TextSwitcher
+                android:id="@+id/ts_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/txt_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_country_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_background_softgrey"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="12"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+
+
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/recycler_view"
+            android:layout_marginTop="50dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/txt_subtitle"
+            android:clipToPadding = "false"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

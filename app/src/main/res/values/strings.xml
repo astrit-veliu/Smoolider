@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Smooth Slider</string>
+
+    <string name="title_1">"S-Class"</string>
+    <string name="title_2">"The EQC"</string>
+    <string name="title_3">"AMG GT"</string>
+    <string name="title_4">"G-Class"</string>
+    <string name="title_5">"C-Class"</string>
+
+    <string name="description_1">"The limited-edition special S 65 Final Edition model from Mercedes-AMG marks the pinnacle of the 6.0-litre V12 biturbo engine’s long success story on board the S-Class Saloon"</string>
+    <string name="description_2">"The first fully electric Mercedes-Benz combines minimalistic design with performance and fun driving properties – all with zero local emissions. Describing the EQC in one word? Quite a challenge"</string>
+    <string name="description_3">"More space, more power, more goose pimples – the new Mercedes-AMG GT 4-door model delivers driving experiences in new dimensions and extends the AMG model family."</string>
+    <string name="description_4">"The sporty STRONGER THAN TIME Edition. One of the six sporty exclusive finishes from G manufaktur. Inside, enjoy the Nappa leather in titanium grey pearl"</string>
+    <string name="description_5">"The C 63 S is the bedrock of Mercedes-AMG. Drivers and fans love it because it is one of a kind in its segment. Its signature feature is the immensely powerful eight-cylinder engine "</string>
+
+
+    <string name="position_1">"https://www.mercedes-benz.com/en/vehicles/passenger-cars/s-class/mercedes-amg-s-65-final-edition/"</string>
+    <string name="position_2">"https://www.mercedes-benz.com/en/eq/eqc/the-eqc-2019-in-just-one-word/"</string>
+    <string name="position_3">"https://www.mercedes-benz.com/en/mbsocialcar/mbsocialcar-mercedes-amg-gt-63-s-4matic/"</string>
+    <string name="position_4">"https://www.mercedes-benz.com/en/vehicles/passenger-cars/g-class/"</string>
+    <string name="position_5">"https://www.mercedes-benz.com/en/vehicles/passenger-cars/c-class/mercedes-amg-c-63-s-coupe-driving-fun/"</string>
+
+
+</resources>

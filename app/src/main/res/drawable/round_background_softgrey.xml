@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/dashboard_background"/>
+            <stroke
+                android:width="1dp"
+                android:color="#fbfbfd" />
+            <corners
+                android:radius="14dp" />
+
+        </shape>
+    </item>
+
+</selector>
