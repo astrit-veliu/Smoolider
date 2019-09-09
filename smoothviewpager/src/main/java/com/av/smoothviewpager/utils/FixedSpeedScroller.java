@@ -1,12 +1,15 @@
-package com.av.smoothslider;
+package com.av.smoothviewpager.utils;
 
 import android.content.Context;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
+/**
+ * Created by Astrit Veliu on 09,September,2019
+ */
 public class FixedSpeedScroller extends Scroller {
 
-    private int mDuration = 5000;
+    private int mDuration = 1500;
 
     public FixedSpeedScroller(Context context) {
         super(context);

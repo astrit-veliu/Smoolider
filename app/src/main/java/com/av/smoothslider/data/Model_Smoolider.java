@@ -1,9 +1,12 @@
-package com.av.smoothslider;
+package com.av.smoothslider.data;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Model_Gift {
+/**
+ * Created by Astrit Veliu on 09,September,2019
+ */
+public class Model_Smoolider {
     @SerializedName("points")
     @Expose
     private String points;

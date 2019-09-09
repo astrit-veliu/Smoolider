@@ -1,10 +1,13 @@
-package com.av.smoothslider;
+package com.av.smoothviewpager.utils;
 
 import android.os.Build;
 import android.view.View;
 
 import androidx.viewpager.widget.ViewPager;
 
+/**
+ * Created by Astrit Veliu on 09,September,2019
+ */
 public class CardsPagerTransformerBasic implements ViewPager.PageTransformer {
 
     private int baseElevation;

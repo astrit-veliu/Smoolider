@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <RelativeLayout
@@ -19,29 +19,37 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:id="@+id/img_close"
+            android:id="@+id/img_github"
             android:layout_marginLeft="20dp"
             android:layout_height="?android:attr/actionBarSize"
             app:srcCompat="@drawable/ic_action_name"/>
 
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="?android:attr/actionBarSize"
+            app:lottie_loop="false" />
+
         <TextView
             android:layout_marginLeft="20dp"
-            android:id="@+id/tv_country_1"
+            android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="28sp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:text="country"
-            android:layout_below="@+id/txt_title"
+            android:layout_below="@+id/txt_header"
             android:textColor="@color/colorBlack"
             android:layout_marginTop="20dp"
             android:textStyle="bold" />
 
 
         <TextView
-            android:id="@+id/txt_title"
+            android:id="@+id/txt_header"
             android:layout_width="wrap_content"
             android:layout_height="?android:attr/actionBarSize"
             android:layout_centerHorizontal="true"
@@ -59,13 +67,13 @@
             android:layout_height="37dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:layout_below="@+id/txt_title"
+            android:layout_below="@+id/txt_header"
             android:layout_alignParentEnd="true"
             android:background="@drawable/round_black_chip"
             android:layout_alignParentRight="true">
 
             <TextSwitcher
-                android:id="@+id/ts_temperature"
+                android:id="@+id/txt_swithcher_position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />
@@ -77,7 +85,7 @@
             android:id="@+id/txt_subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_country_1"
+            android:layout_below="@+id/txt_title"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="20dp"
@@ -97,8 +105,8 @@
 
 
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/recycler_view"
+        <com.av.smoothviewpager.Smoolider.SmoothViewpager
+            android:id="@+id/smoolider"
             android:layout_marginTop="50dp"
             android:paddingRight="10dp"
             android:layout_alignParentBottom="true"
@@ -106,7 +114,7 @@
             android:clipToPadding = "false"
             android:layout_marginBottom="50dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></androidx.viewpager.widget.ViewPager>
+            android:layout_height="wrap_content"></com.av.smoothviewpager.Smoolider.SmoothViewpager>
 
 
 
