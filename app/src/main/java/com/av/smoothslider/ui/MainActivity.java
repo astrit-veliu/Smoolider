@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
 
-import android.animation.Animator;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -15,8 +14,8 @@ import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
 import com.astritveliu.boom.Boom;
 import com.av.smoothslider.R;
-import com.av.smoothslider.data.Model_Smoolider;
-import com.av.smoothslider.data.Smoolider_Adapter;
+import com.av.smoothslider.data.ModelSmoolider;
+import com.av.smoothslider.data.SmooliderAdapter;
 import com.av.smoothviewpager.Smoolider.SmoothViewpager;
 import com.av.smoothviewpager.utils.Txt_Factory;
 import com.google.android.material.snackbar.Snackbar;
@@ -41,13 +40,14 @@ public class MainActivity extends AppCompatActivity {
     private final String[] position = {"1 / 5", "2 / 5", "3 / 5", "4 / 5", "5 / 5"};
 
     private TextSwitcher txt_swithcher_position;
-    private TextView txt_title,txt_subtitle;
+    private TextView txt_title;
+    private TextView txt_subtitle;
     private boolean is_autoplay = false;
     private int currentPosition;
     private SmoothViewpager viewPager;
     private ImageView img_github;
     private LottieAnimationView animationView;
-    private List<Model_Smoolider> feedItemList;
+    private List<ModelSmoolider> feedItemList;
 
 
     @Override
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         init_widgets();
         generate_items();
 
-        viewPager.setAdapter( new Smoolider_Adapter(feedItemList,getApplicationContext()));
+        viewPager.setAdapter( new SmooliderAdapter(feedItemList,getApplicationContext()));
 
         animationView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     private void generate_items(){
         feedItemList = new ArrayList<>();
         for(int i=0;i<pics.length;i++){
-            Model_Smoolider gift = new Model_Smoolider();
+            ModelSmoolider gift = new ModelSmoolider();
             gift.setImage(pics[i]);
             gift.setName(titles[i]);
             gift.setUrl(url[i]);

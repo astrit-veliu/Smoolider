@@ -104,7 +104,7 @@ public class Smoolider_Utils {
      * @param url URL to open
      */
     public static void openWebPage(Context context, String url){
-        if(url.equalsIgnoreCase("") || url.isEmpty() || url == null){
+        if(url.equalsIgnoreCase("") || url.isEmpty()){
             Toast.makeText(context, "Bad url", Toast.LENGTH_SHORT).show();
         } else {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));

@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Created by Astrit Veliu on 09,September,2019
  */
-public class Model_Smoolider {
+public class ModelSmoolider {
     @SerializedName("points")
     @Expose
     private String points;

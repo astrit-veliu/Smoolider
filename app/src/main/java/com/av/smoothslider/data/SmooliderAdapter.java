@@ -22,12 +22,11 @@ import static com.av.smoothviewpager.utils.Smoolider_Utils.openWebPage;
 /**
  * Created by Astrit Veliu on 09,September,2019
  */
-public class Smoolider_Adapter extends PagerAdapter {
-    private LayoutInflater layoutInflater;
+public class SmooliderAdapter extends PagerAdapter {
     private Context mContext;
-    private List<Model_Smoolider> feedItemList;
+    private List<ModelSmoolider> feedItemList;
 
-    public Smoolider_Adapter(List<Model_Smoolider> feedItemList, Context mContext) {
+    public SmooliderAdapter(List<ModelSmoolider> feedItemList, Context mContext) {
         this.mContext = mContext;
         this.feedItemList = feedItemList;
     }
@@ -39,9 +38,9 @@ public class Smoolider_Adapter extends PagerAdapter {
 
     @Override
     public View instantiateItem(ViewGroup container, int position) {
-        final Model_Smoolider card_gift = feedItemList.get(position);
+        final ModelSmoolider card_gift = feedItemList.get(position);
 
-        layoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater layoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.structure_gift, container, false);
 
         RoundedImageView img_slider = (RoundedImageView) view.findViewById(R.id.img_slider);
@@ -79,6 +78,6 @@ public class Smoolider_Adapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject (View view, Object object){
-        return view == object;
+        return view.equals(object);
     }
 }
