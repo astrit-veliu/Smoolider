@@ -40,7 +40,7 @@ allprojects {
 Add the dependency to your app `build.gradle` file (not your project build.gradle file).
 ```gradle
 dependencies {
-   implementation 'com.github.astrit-veliu:Smoolider:1.0'
+   implementation 'com.github.astrit-veliu:Smoolider:1.1'
 }
 ```
 
