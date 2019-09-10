@@ -21,6 +21,8 @@ ___
 
 ![license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 [![](https://jitpack.io/v/astrit-veliu/Boom.svg)](https://jitpack.io/#astrit-veliu/Smoolider)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/107ff292bd9f49b1a6824bf32f183e66)](https://www.codacy.com/manual/astrit-veliu/Smoolider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=astrit-veliu/Smoolider&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/astrit-veliu/Smoolider.svg?style=svg)](https://circleci.com/gh/astrit-veliu/Smoolider)
 <br>
 
 ## Installation
