@@ -43,34 +43,37 @@ dependencies {
    implementation 'com.github.astrit-veliu:Smoolider:1.0'
 }
 ```
-​
 
 ## Usage
 `Smoolider` is used the same as a normal ViewPager but more beautiful and with other functionalities. You can use my adapter, or implement a new one. 
 
-
-```
 ### XML
-Include the widget in xml. 
+Include the widget in xml.
+
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
 <com.av.smoothviewpager.Smoolider.SmoothViewpager
             android:id="@+id/smoolider"
             android:paddingRight="10dp"
             android:layout_alignParentBottom="true"
             android:clipToPadding = "false"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.av.smoothviewpager.Smoolider.SmoothViewpager>
+            android:layout_height="wrap_content">
+	    </com.av.smoothviewpager.Smoolider.SmoothViewpager>
 ```
 
-```
 ### Java
 After attaching the adapter to SmoothViewpager you can start/cancel autoplay of slides, adjust the quality of images and interact with other widgets. 
 ```java
-autoplay_viewpager(viewPager,feedItemList.size()); //feedItemList.size() returns the number of viewpager pages
+//feedItemList.size() returns the number of viewpager pages
+autoplay_viewpager(viewPager,feedItemList.size()); 
 
-stop_autoplay_ViewPager(); // this method stops autoplay
+//this method stops autoplay
+stop_autoplay_ViewPager(); 
 
-img_slider.setImageBitmap(decodeSampledBitmapFromResource(mContext.getResources(),card_gift.getImage(), 800, 650)); // reduces the quality of image
+//reduces the quality of image
+img_slider.setImageBitmap(decodeSampledBitmapFromResource(mContext.getResources(),card_gift.getImage(), 800, 650)); 
 ```
 
 ## 📄 License
