@@ -3,7 +3,7 @@
 <img align="left" src="https://user-images.githubusercontent.com/16231428/64536567-a0fba400-d319-11e9-9163-852037e3cffa.gif" width="260" height="460" /></a>
 <a href="https://github.com/astrit-veliu/Smoolider">
 
-<p><h1 align="left">ՏʍօօӀíժҽɾ ⭐</h1></p>
+<p><h1 align="left">SMOOLIDER ⭐</h1></p>
 
 <h4>A smooth slider with a modern UI and effects based on ViewPager. More features coming soon</h4>
 
