@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private var is_autoplay = false
+    private var isAutoplay = false
     private var currentPosition = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.animationView.setOnClickListener { view ->
             manageAutoplay()
-            Snackbar.make(view, " ▶ Autoplay :  $is_autoplay", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(view, " ▶ Autoplay :  $isAutoplay", Snackbar.LENGTH_LONG).show()
         }
         binding.githubImageView.setOnClickListener { openWebPage("https://github.com/astrit-veliu") }
 
@@ -87,8 +87,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun manageAutoplay() {
         binding.animationView.playAnimation()
-        if (is_autoplay) binding.viewpager.stopAutoplayViewPager()
+        if (isAutoplay) binding.viewpager.stopAutoplayViewPager()
         else binding.viewpager.startAutoplay()
-        is_autoplay = !is_autoplay
+        isAutoplay = !isAutoplay
     }
 }
