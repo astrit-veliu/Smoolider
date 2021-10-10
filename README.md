@@ -42,7 +42,7 @@ allprojects {
 Add the dependency to your app `build.gradle` file (not your project build.gradle file).
 ```gradle
 dependencies {
-   implementation 'com.github.astrit-veliu:Smoolider:1.1'
+   implementation 'com.github.astrit-veliu:Smoolider:1.2'
 }
 ```
 
@@ -66,16 +66,17 @@ Include the widget in xml.
 ```
 
 ### Java
-After attaching the adapter to SmoothViewpager you can start/cancel autoplay of slides, adjust the quality of images and interact with other widgets. 
-```java
-//feedItemList.size() returns the number of viewpager pages
-autoplay_viewpager(viewPager,feedItemList.size()); 
-
-//this method stops autoplay
-stop_autoplay_ViewPager(); 
-
-//reduces the quality of image
-img_slider.setImageBitmap(decodeSampledBitmapFromResource(mContext.getResources(),card_gift.getImage(), 800, 650)); 
+After attaching the adapter to SmoothViewpager you can start/cancel autoplay of slides, adjust the quality of images and interact with other widgets. (See the example for more details)
+```Kotlin
+        //simply call the setAdapter method with parameter a list of PageModel objects, where you can also add your own object into it
+        viewpager.setAdapter(getDemoData())
+        viewpager.setOnPageClick { page ->
+            viewpager.removePage(page) //will remove the page object from Smoolider and jumps to first postion
+	    viewpager.addPage(page) //will add the page object from Smoolider and jumps to its position
+        }
+        viewpager.setOnPageSelected { position, page ->
+            //here you get the current position and the Page Object in case you want to do some actions with its data
+        }
 ```
 
 ## 📄 License
