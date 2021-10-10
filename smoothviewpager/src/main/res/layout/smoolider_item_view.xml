@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/rel_content"
+  android:layout_width="wrap_content"
+  android:layout_height="match_parent"
+  android:layout_marginLeft="55dp"
+  android:layout_marginTop="5dp"
+  android:layout_marginRight="55dp"
+  android:layout_marginBottom="5dp">
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+      android:id="@+id/cardImageView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:elevation="5dp"
+      android:scaleType="centerCrop"
+      app:cornerRadius="36dp"
+      tools:src="@drawable/round_chip" />
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/detailsChipTextView"
+    android:layout_width="wrap_content"
+    android:visibility="gone"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="25dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/round_chip"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingRight="20dp"
+    android:lines="1"
+    android:maxLength="25"
+    android:ellipsize="end"
+    android:paddingBottom="5dp"
+    tools:visibility="visible"
+    android:textColor="@color/white" />
+
+</RelativeLayout>

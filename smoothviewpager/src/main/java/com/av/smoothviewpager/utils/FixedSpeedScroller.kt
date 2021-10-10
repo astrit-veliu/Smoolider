@@ -1,38 +1,21 @@
-package com.av.smoothviewpager.utils;
+package com.av.smoothviewpager.utils
 
-import android.content.Context;
-import android.view.animation.Interpolator;
-import android.widget.Scroller;
+import android.content.Context
+import android.widget.Scroller
 
 /**
  * Created by Astrit Veliu on 09,September,2019
+ * updated on 06, October, 2021
  */
-public class FixedSpeedScroller extends Scroller {
+class FixedSpeedScroller@JvmOverloads constructor(context: Context) : Scroller(context) {
 
-    private int mDuration = 1500;
+    private val mDuration = 1500
 
-    public FixedSpeedScroller(Context context) {
-        super(context);
+    override fun startScroll(startX: Int, startY: Int, dx: Int, dy: Int, duration: Int) {
+        super.startScroll(startX, startY, dx, dy, mDuration)
     }
 
-    public FixedSpeedScroller(Context context, Interpolator interpolator) {
-        super(context, interpolator);
-    }
-
-    public FixedSpeedScroller(Context context, Interpolator interpolator, boolean flywheel) {
-        super(context, interpolator, flywheel);
-    }
-
-
-    @Override
-    public void startScroll(int startX, int startY, int dx, int dy, int duration) {
-        // Ignore received duration, use fixed one instead
-        super.startScroll(startX, startY, dx, dy, mDuration);
-    }
-
-    @Override
-    public void startScroll(int startX, int startY, int dx, int dy) {
-        // Ignore received duration, use fixed one instead
-        super.startScroll(startX, startY, dx, dy, mDuration);
+    override fun startScroll(startX: Int, startY: Int, dx: Int, dy: Int) {
+        super.startScroll(startX, startY, dx, dy, mDuration)
     }
 }

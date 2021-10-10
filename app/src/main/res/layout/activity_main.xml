@@ -1,127 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false">
 
+    <ImageView
+      android:id="@+id/githubImageView"
+      android:layout_width="wrap_content"
+      android:layout_height="?android:attr/actionBarSize"
+      android:layout_marginLeft="20dp"
+      app:srcCompat="@drawable/ic_action_name" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipChildren="false"
-        android:background="@color/white"
-        android:clipToPadding = "false"
-        android:animateLayoutChanges="true">
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/animationView"
+      android:layout_width="?android:attr/actionBarSize"
+      android:layout_height="?android:attr/actionBarSize"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="20dp"
+      app:lottie_loop="false" />
 
+    <TextView
+      android:id="@+id/titleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/headerTextView"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="20dp"
+      android:textColor="@color/colorBlack"
+      android:textSize="28sp"
+      android:textStyle="bold"
+      tools:text="title" />
 
+    <TextView
+      android:id="@+id/headerTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="?android:attr/actionBarSize"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="20dp"
+      android:fontFamily="@font/audiowide"
+      android:gravity="center"
+      android:text="Smoolider"
+      android:textColor="@color/colorBlack"
+      android:textSize="20sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/img_github"
-            android:layout_marginLeft="20dp"
-            android:layout_height="?android:attr/actionBarSize"
-            app:srcCompat="@drawable/ic_action_name"/>
+    <FrameLayout
+      android:id="@+id/frameLayout"
+      android:layout_width="85dp"
+      android:layout_height="37dp"
+      android:layout_below="@+id/headerTextView"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/round_black_chip">
 
+      <TextSwitcher
+        android:id="@+id/positionTextSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animation_view"
-            android:layout_width="?android:attr/actionBarSize"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:layout_height="?android:attr/actionBarSize"
-            app:lottie_loop="false" />
+    </FrameLayout>
 
-        <TextView
-            android:layout_marginLeft="20dp"
-            android:id="@+id/txt_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="28sp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:text="country"
-            android:layout_below="@+id/txt_header"
-            android:textColor="@color/colorBlack"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold" />
+    <TextView
+      android:id="@+id/subTitleTextView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/titleTextView"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/round_background_softgrey"
+      android:lines="3"
+      android:maxLines="3"
+      android:padding="8dp"
+      android:textColor="@color/colorBlack"
+      android:textSize="14sp"
+      tools:text="description" />
 
+    <com.av.smoothviewpager.smoolider.SmoothViewpager
+      android:id="@+id/viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/subTitleTextView"
+      android:layout_alignParentBottom="true"
+      android:layout_marginTop="50dp"
+      android:layout_marginBottom="50dp"
+      android:clipToPadding="false"
+      android:paddingRight="10dp" />
 
-        <TextView
-            android:id="@+id/txt_header"
-            android:layout_width="wrap_content"
-            android:layout_height="?android:attr/actionBarSize"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="@font/audiowide"
-            android:gravity="center"
-            android:text="Smoolider"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp" />
-
-
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="85dp"
-            android:layout_height="37dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_below="@+id/txt_header"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/round_black_chip"
-            android:layout_alignParentRight="true">
-
-            <TextSwitcher
-                android:id="@+id/txt_swithcher_position"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center" />
-
-        </FrameLayout>
-
-
-        <TextView
-            android:id="@+id/txt_subtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_title"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/round_background_softgrey"
-            android:lines="3"
-            android:maxLines="3"
-            android:padding="8dp"
-            android:text="12"
-            android:textColor="@color/colorBlack"
-            android:textSize="14sp" />
-
-
-
-
-
-
-
-        <com.av.smoothviewpager.Smoolider.SmoothViewpager
-            android:id="@+id/smoolider"
-            android:layout_marginTop="50dp"
-            android:paddingRight="10dp"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/txt_subtitle"
-            android:clipToPadding = "false"
-            android:layout_marginBottom="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.av.smoothviewpager.Smoolider.SmoothViewpager>
-
-
-
-
-
-
-
-    </RelativeLayout>
+  </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

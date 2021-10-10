@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SmoothViewPager</string>
+    <string name="snackbar_options_label">Click the pin for more options</string>
 </resources>

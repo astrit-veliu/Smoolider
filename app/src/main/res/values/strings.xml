@@ -13,12 +13,13 @@
     <string name="description_4">"The sporty STRONGER THAN TIME Edition. One of the six sporty exclusive finishes from G manufaktur. Inside, enjoy the Nappa leather in titanium grey pearl"</string>
     <string name="description_5">"The C 63 S is the bedrock of Mercedes-AMG. Drivers and fans love it because it is one of a kind in its segment. Its signature feature is the immensely powerful eight-cylinder engine "</string>
 
-
     <string name="position_1">"https://www.mercedes-benz.com/en/vehicles/passenger-cars/s-class/mercedes-amg-s-65-final-edition/"</string>
     <string name="position_2">"https://www.mercedes-benz.com/en/eq/eqc/the-eqc-2019-in-just-one-word/"</string>
     <string name="position_3">"https://www.mercedes-benz.com/en/mbsocialcar/mbsocialcar-mercedes-amg-gt-63-s-4matic/"</string>
     <string name="position_4">"https://www.mercedes-benz.com/en/vehicles/passenger-cars/g-class/"</string>
     <string name="position_5">"https://www.mercedes-benz.com/en/vehicles/passenger-cars/c-class/mercedes-amg-c-63-s-coupe-driving-fun/"</string>
 
+    <string name="snackbar_options_label">Click the pin for more options</string>
+    <string name="position_text">%1$d / %2$d</string>
 
 </resources>
